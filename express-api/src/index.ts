@@ -6,11 +6,11 @@ app.use(express.json())
 // app.use(cors())
 const port = 3001
 
-app.get('/', (req, res) => {
-  res.send('helll its working fsdfs sfasdfdfs')
-})
-
+app.get('/', (_req, res) => {
+  res.send('Página de inicio - Caja de Búsqueda');
+});
 
 app.listen(port, () => {
   console.log(`Server Running`)
 })
+
